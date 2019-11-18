@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -19,31 +19,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efk-6d-yh4">
-                                <rect key="frame" x="76" y="256" width="242" height="82"/>
+                                <rect key="frame" x="76" y="205" width="242" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="2u5-F2-BLg" kind="show" id="2qO-p6-jEg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXg-KJ-U5f">
-                                <rect key="frame" x="76" y="372" width="242" height="83"/>
+                                <rect key="frame" x="76" y="321" width="242" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="rdy-Vc-EPz" kind="show" id="Iob-7T-3qA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-wO-GDg">
+                                <rect key="frame" x="335" y="74" width="45" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ra-Mg-Pl9" kind="show" id="9d7-mh-VRs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyz-x6-Jj6">
-                                <rect key="frame" x="76" y="479" width="242" height="89"/>
+                                <rect key="frame" x="76" y="430" width="242" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="2Mq-0M-XQk" kind="show" id="yc7-H1-dBl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-wO-GDg">
-                                <rect key="frame" x="335" y="118" width="45" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="2ra-Mg-Pl9" kind="show" id="9d7-mh-VRs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,17 +148,24 @@
             </objects>
             <point key="canvasLocation" x="1700.0000000000002" y="781.47321428571422"/>
         </scene>
-        <!--Workspace-->
+        <!--View Controller-->
         <scene sceneID="NlO-wz-17o">
             <objects>
-                <viewController id="rdy-Vc-EPz" customClass="Workspace" customModule="T_Shirt_Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rdy-Vc-EPz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MNM-4T-lZQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Workspace" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-eN-8WC">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000023" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-me-jDw">
+                                <rect key="frame" x="35" y="66" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="2Mq-0M-XQk" kind="show" id="V35-AH-mrn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -169,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dug-jQ-4kU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="117"/>
+            <point key="canvasLocation" x="2544.9275362318845" y="116.51785714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eG2-cf-DVZ">
@@ -180,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login" translatesAutoresizingMaskIntoConstraints="NO" id="o4e-dB-KdY">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-v3-lns">
                                 <rect key="frame" x="146" y="638" width="96" height="62"/>
@@ -226,7 +237,8 @@
         <image name="Workspace" width="1388" height="1933"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jdw-W9-ghh"/>
-        <segue reference="mKh-Nw-fwu"/>
+        <segue reference="phW-92-WwW"/>
+        <segue reference="yc7-H1-dBl"/>
+        <segue reference="rhe-fa-WJi"/>
     </inferredMetricsTieBreakers>
 </document>

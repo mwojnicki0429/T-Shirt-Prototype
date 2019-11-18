@@ -16,15 +16,30 @@ class Workspace: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onMenuPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Menu", message: nil, preferredStyle: UIAlertController.Style.alert)
 
-    /*
-    // MARK: - Navigation
+        alert.addAction(UIButton) { (button) in
+            button.
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+        alert.addAction(cancelAction)
+
+        let addAction = UIAlertAction(title: "Add", style: UIAlertAction.Style.default) { (action) in
+            let nameTextField = alert.textFields?[0]
+            let locationTextField = alert.textFields?[1]
+            let numberOfStudentsTextField = alert.textFields?[2]
+            let webPageTextField = alert.textFields?[3]
+            
+            let newCollege = College(Name: nameTextField!.text!, Location: locationTextField!.text!, NumberOfStudents: numberOfStudentsTextField!.text!, Image: nil, Webpage: webPageTextField!.text!, Crest: nil)
+            self.collegeArray.append(newCollege)
+            self.myTableView.reloadData()
+        }
+
+        alert.addAction(addAction)
+        present(alert, animated: true, completion: nil)
     }
-    */
+    
 
 }
